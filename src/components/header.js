@@ -3,12 +3,13 @@ import { NavBar } from "./nav"
 export function Header() {
 
     return(
-        <header>
-            <section>
-                <img src={logo} alt="logo" />
+        <header className="header">
+            <section className="logo">
+                <img width="100%" src={logo} alt="logo" />
             </section>
-            <section>
-            <NavBar />
+
+            <section className="nav">
+            <NavBar/>
             </section>
         </header>
     )
