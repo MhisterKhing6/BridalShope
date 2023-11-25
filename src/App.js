@@ -1,13 +1,14 @@
 import './App.css';
 import './styles.css'
 import { Header } from './components/header';
-import {Main} from  "./components/main"
+import {Main} from  "./components/main";
+import { Booking } from './components/boooking';
 
 function App() {
   return (
     <>
     <Header />
-    <Main />
+    <Booking />
 
     <footer></footer>
     </>

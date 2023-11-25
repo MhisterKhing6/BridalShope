@@ -271,8 +271,62 @@ nav > ul {
    .footerelem ul li {
 
    }
+   .forms {
+    margin: 1rem;
+    padding: 2rem;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .forms form {
+    color: #1b1a19;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 20px;
+    padding: 2rem;
+    background-color: #EDEFEE;
+    box-shadow: 2px 3px 3px 4px gray;
+   }
+   .forms label {
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   }
+  
+   .forms input[type=submit] {
+    width: 300px;
+    background-color: #F4C314;
+    text-align: center;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    margin-top: 30px;
+   }
+
+   .forms select, .forms input {
+    width: auto;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 20px;
+    text-align: center;
+
+   }
    @media screen and (max-width: 932px) {
-        .footerelem {
+    
+    .forms input[type=submit] {
+        width: 200px; 
+        font-size: 1rem;
+    }
+    .forms label {
+        font-size: 1.3rem;
+    }
+    .forms {
+        width: 80%;
+    }
+    .footerelem {
             width: 100%;
             align-items: center;
             justify-content: center;
