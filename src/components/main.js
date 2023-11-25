@@ -1,6 +1,6 @@
 import heroImage from "../assets/images/banner.jpg"
 import { FaStar } from "react-icons/fa";
-
+import { Footer } from "./footer";
 
 export function Main(){
     let dishes = [{"name": "Grek salad", "src": require("../assets/images/957db75e6b654e07f65da12b96dc858c5995ed28.jpg"), description:"The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."},
@@ -40,7 +40,7 @@ export function Main(){
                     {dishes.map(dish => {
                         return (
                         <article key={dish.name} className="dishCard">
-                        <img src={dish.src} />
+                        <img src={dish.src} alt= {dish.name} />
                         <aside>
                             <h2>{dish.name}</h2>
                             <p>
@@ -76,7 +76,20 @@ export function Main(){
                     })}
                 </article>
             </section>
-    
+            <section className="about">
+                <article>
+                    <h1>Little Lemon</h1>
+                    <h3>Chicago</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at ex leo. Maecenas enim sem, laoreet at nulla ac, luctus scelerisque massa. Praesent ut molestie nisi. Aliquam arcu lorem, auctor condimentum blandit id, lobortis in nisi. Ut diam justo, euismod in accumsan id, vehicula sit amet tellus. Pellentesque porttitor elit lacus, vitae lacinia magna ultricies quis. Etiam vitae tellus et mi hendrerit consequat. In dictum ligula in elit euismod malesuada. Curabitur varius augue id tempus ultricies. Mauris suscipit porta odio, et pretium nibh scelerisque ut.
+                    </p>
+                </article>
+                <aside>
+                <img className="firstImage aboutImage" src={dishes[0].src} />
+                <img className="secondImage aboutImage" src={dishes[2].src} />
+                </aside>
+            </section>
+            <Footer />
         </section>
     )
 }
